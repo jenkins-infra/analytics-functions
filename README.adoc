@@ -1,0 +1,5 @@
+= Functions
+
+This repository is a collection of
+link:https://azure.microsoft.com/en-us/services/functions/[Azure Functions]
+which help the Jenkins project operate.
