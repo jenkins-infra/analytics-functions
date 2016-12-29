@@ -1,0 +1,32 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "webHookType": "github"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "type": "eventHub",
+      "name": "outputEventHubMessage",
+      "path": "github-events",
+      "connection": "github-events",
+      "direction": "out"
+    },
+    {
+      "type": "documentDB",
+      "name": "outputDocument",
+      "databaseName": "rtyler-github-events",
+      "collectionName": "jenkins-infra",
+      "createIfNotExists": false,
+      "connection": "rtyler-github-events_DOCUMENTDB",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

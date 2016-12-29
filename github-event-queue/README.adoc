@@ -1,0 +1,5 @@
+= GitHub Event Queue
+
+This function receives
+link:https://developer.github.com/webhooks/[GitHub Webhooks]
+and shuffles them around for various data processing and analytics purposes.
