@@ -1,4 +1,4 @@
-= Functions
+= Analytics Functions
 
 This repository is a collection of
 link:https://azure.microsoft.com/en-us/services/functions/[Azure Functions]
